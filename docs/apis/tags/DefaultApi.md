@@ -1,5 +1,5 @@
 <a name="__pageTop"></a>
-# openapi_client.apis.tags.default_api.DefaultApi
+# interopdata.apis.tags.default_api.DefaultApi
 
 All URIs are relative to *https://api.interopdata.com*
 
@@ -26,14 +26,14 @@ Method | HTTP request | Description
 
 * Bearer (auth-scheme) Authentication (project-secret):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
-from openapi_client.model.create_customer_dto import CreateCustomerDto
-from openapi_client.model.customer import Customer
+import interopdata
+from interopdata.apis.tags import default_api
+from interopdata.model.customer import Customer
+from interopdata.model.create_customer_dto import CreateCustomerDto
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.interopdata.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = interopdata.Configuration(
     host = "https://api.interopdata.com"
 )
 
@@ -43,11 +43,11 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (auth-scheme): project-secret
-configuration = openapi_client.Configuration(
+configuration = interopdata.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with interopdata.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -65,7 +65,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except interopdata.ApiException as e:
         print("Exception when calling DefaultApi->create_customer: %s\n" % e)
 ```
 ### Parameters
@@ -123,13 +123,13 @@ Type | Description  | Notes
 
 * Bearer (auth-scheme) Authentication (user-token):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
-from openapi_client.model.create_data_export_dto import CreateDataExportDto
+import interopdata
+from interopdata.apis.tags import default_api
+from interopdata.model.create_data_export_dto import CreateDataExportDto
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.interopdata.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = interopdata.Configuration(
     host = "https://api.interopdata.com"
 )
 
@@ -139,11 +139,11 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (auth-scheme): user-token
-configuration = openapi_client.Configuration(
+configuration = interopdata.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with interopdata.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -155,7 +155,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         api_response = api_instance.create_data_export(
             body=body,
         )
-    except openapi_client.ApiException as e:
+    except interopdata.ApiException as e:
         print("Exception when calling DefaultApi->create_data_export: %s\n" % e)
 ```
 ### Parameters
@@ -206,13 +206,13 @@ headers | Unset | headers were not defined |
 
 * Bearer (auth-scheme) Authentication (user-token):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
-from openapi_client.model.data_export_dataset_download import DataExportDatasetDownload
+import interopdata
+from interopdata.apis.tags import default_api
+from interopdata.model.data_export_dataset_download import DataExportDatasetDownload
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.interopdata.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = interopdata.Configuration(
     host = "https://api.interopdata.com"
 )
 
@@ -222,11 +222,11 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (auth-scheme): user-token
-configuration = openapi_client.Configuration(
+configuration = interopdata.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with interopdata.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -239,7 +239,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except interopdata.ApiException as e:
         print("Exception when calling DefaultApi->create_data_export_dataset_download: %s\n" % e)
 ```
 ### Parameters
@@ -302,14 +302,14 @@ Type | Description  | Notes
 
 * Bearer (auth-scheme) Authentication (project-secret):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
-from openapi_client.model.create_data_export_link_dto import CreateDataExportLinkDto
-from openapi_client.model.data_export_link import DataExportLink
+import interopdata
+from interopdata.apis.tags import default_api
+from interopdata.model.data_export_link import DataExportLink
+from interopdata.model.create_data_export_link_dto import CreateDataExportLinkDto
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.interopdata.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = interopdata.Configuration(
     host = "https://api.interopdata.com"
 )
 
@@ -319,11 +319,11 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (auth-scheme): project-secret
-configuration = openapi_client.Configuration(
+configuration = interopdata.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with interopdata.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -337,7 +337,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except interopdata.ApiException as e:
         print("Exception when calling DefaultApi->create_data_export_link: %s\n" % e)
 ```
 ### Parameters
@@ -395,14 +395,14 @@ Type | Description  | Notes
 
 * Bearer (auth-scheme) Authentication (project-secret):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
-from openapi_client.model.access_token import AccessToken
-from openapi_client.model.create_access_token_dto import CreateAccessTokenDto
+import interopdata
+from interopdata.apis.tags import default_api
+from interopdata.model.create_access_token_dto import CreateAccessTokenDto
+from interopdata.model.access_token import AccessToken
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.interopdata.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = interopdata.Configuration(
     host = "https://api.interopdata.com"
 )
 
@@ -412,11 +412,11 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (auth-scheme): project-secret
-configuration = openapi_client.Configuration(
+configuration = interopdata.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with interopdata.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -430,7 +430,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except interopdata.ApiException as e:
         print("Exception when calling DefaultApi->create_o_auth_token: %s\n" % e)
 ```
 ### Parameters
@@ -488,14 +488,14 @@ Type | Description  | Notes
 
 * Bearer (auth-scheme) Authentication (project-secret):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
-from openapi_client.model.create_customer_dto import CreateCustomerDto
-from openapi_client.model.customer import Customer
+import interopdata
+from interopdata.apis.tags import default_api
+from interopdata.model.customer import Customer
+from interopdata.model.create_customer_dto import CreateCustomerDto
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.interopdata.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = interopdata.Configuration(
     host = "https://api.interopdata.com"
 )
 
@@ -505,11 +505,11 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (auth-scheme): project-secret
-configuration = openapi_client.Configuration(
+configuration = interopdata.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with interopdata.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -527,7 +527,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except interopdata.ApiException as e:
         print("Exception when calling DefaultApi->customers_list: %s\n" % e)
 ```
 ### Parameters
@@ -591,13 +591,13 @@ Class Name | Input Type | Accessed Type | Description | Notes
 
 * Bearer (auth-scheme) Authentication (user-token):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
-from openapi_client.model.data_export_dataset import DataExportDataset
+import interopdata
+from interopdata.apis.tags import default_api
+from interopdata.model.data_export_dataset import DataExportDataset
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.interopdata.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = interopdata.Configuration(
     host = "https://api.interopdata.com"
 )
 
@@ -607,11 +607,11 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (auth-scheme): user-token
-configuration = openapi_client.Configuration(
+configuration = interopdata.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with interopdata.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -624,7 +624,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except interopdata.ApiException as e:
         print("Exception when calling DefaultApi->data_export_dataset_retrieve: %s\n" % e)
 ```
 ### Parameters
@@ -687,13 +687,13 @@ Type | Description  | Notes
 
 * Bearer (auth-scheme) Authentication (user-token):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
-from openapi_client.model.data_export import DataExport
+import interopdata
+from interopdata.apis.tags import default_api
+from interopdata.model.data_export import DataExport
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.interopdata.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = interopdata.Configuration(
     host = "https://api.interopdata.com"
 )
 
@@ -703,11 +703,11 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (auth-scheme): user-token
-configuration = openapi_client.Configuration(
+configuration = interopdata.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with interopdata.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -720,7 +720,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except interopdata.ApiException as e:
         print("Exception when calling DefaultApi->data_export_retrieve: %s\n" % e)
 ```
 ### Parameters
@@ -783,13 +783,13 @@ Type | Description  | Notes
 
 * Bearer (auth-scheme) Authentication (user-token):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
-from openapi_client.model.data_export import DataExport
+import interopdata
+from interopdata.apis.tags import default_api
+from interopdata.model.data_export import DataExport
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.interopdata.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = interopdata.Configuration(
     host = "https://api.interopdata.com"
 )
 
@@ -799,11 +799,11 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (auth-scheme): user-token
-configuration = openapi_client.Configuration(
+configuration = interopdata.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with interopdata.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -811,7 +811,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.data_exports_list()
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except interopdata.ApiException as e:
         print("Exception when calling DefaultApi->data_exports_list: %s\n" % e)
 ```
 ### Parameters
@@ -859,13 +859,13 @@ Class Name | Input Type | Accessed Type | Description | Notes
 
 * Bearer (auth-scheme) Authentication (project-secret):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
-from openapi_client.model.dataset import Dataset
+import interopdata
+from interopdata.apis.tags import default_api
+from interopdata.model.dataset import Dataset
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.interopdata.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = interopdata.Configuration(
     host = "https://api.interopdata.com"
 )
 
@@ -875,11 +875,11 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (auth-scheme): project-secret
-configuration = openapi_client.Configuration(
+configuration = interopdata.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with interopdata.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -887,7 +887,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.datasets_list()
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except interopdata.ApiException as e:
         print("Exception when calling DefaultApi->datasets_list: %s\n" % e)
 ```
 ### Parameters

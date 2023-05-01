@@ -1,4 +1,4 @@
-# openapi_client.model.data_export_link.DataExportLink
+# interopdata.model.data_export_link.DataExportLink
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

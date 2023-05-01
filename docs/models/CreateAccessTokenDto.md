@@ -1,4 +1,4 @@
-# openapi_client.model.create_access_token_dto.CreateAccessTokenDto
+# interopdata.model.create_access_token_dto.CreateAccessTokenDto
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

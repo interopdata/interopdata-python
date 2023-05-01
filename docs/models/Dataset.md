@@ -1,4 +1,4 @@
-# openapi_client.model.dataset.Dataset
+# interopdata.model.dataset.Dataset
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

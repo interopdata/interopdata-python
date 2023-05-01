@@ -1,4 +1,4 @@
-# openapi_client.model.create_customer_dto.CreateCustomerDto
+# interopdata.model.create_customer_dto.CreateCustomerDto
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

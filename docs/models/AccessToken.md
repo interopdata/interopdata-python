@@ -1,4 +1,4 @@
-# openapi_client.model.access_token.AccessToken
+# interopdata.model.access_token.AccessToken
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

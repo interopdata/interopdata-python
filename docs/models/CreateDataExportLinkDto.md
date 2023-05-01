@@ -1,4 +1,4 @@
-# openapi_client.model.create_data_export_link_dto.CreateDataExportLinkDto
+# interopdata.model.create_data_export_link_dto.CreateDataExportLinkDto
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

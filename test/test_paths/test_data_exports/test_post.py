@@ -11,9 +11,9 @@ from unittest.mock import patch
 
 import urllib3
 
-import openapi_client
-from openapi_client.paths.data_exports import post  # noqa: E501
-from openapi_client import configuration, schemas, api_client
+import interopdata
+from interopdata.paths.data_exports import post  # noqa: E501
+from interopdata import configuration, schemas, api_client
 
 from .. import ApiTestMixin
 

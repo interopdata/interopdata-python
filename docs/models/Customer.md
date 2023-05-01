@@ -1,4 +1,4 @@
-# openapi_client.model.customer.Customer
+# interopdata.model.customer.Customer
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes
